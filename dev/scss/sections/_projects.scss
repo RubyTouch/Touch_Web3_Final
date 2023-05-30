@@ -1,0 +1,55 @@
+/* =============
+    Projects
+============= */
+
+.projects{
+    .p3{
+        display: none;
+    }
+
+    .p4{
+        display: none;
+    }
+ 
+    .project-pictures{
+            display: grid;
+            grid-template-areas: 
+            "p1 p2";
+        }
+
+        .p1{
+            grid-area: p1;
+        }
+
+        .p2{
+            grid-area: p2;
+        }
+
+ 
+    @include lg{
+        .project-pictures{
+            display: grid;
+            grid-template-areas:
+            "p1 p2"
+            "p3 p4";
+        }
+        
+        .p1{
+            grid-area: p1;
+        }
+
+        .p2{
+            grid-area: p2;
+        }
+
+        .p3{
+            display: block;
+            grid-area: p3;
+        }
+
+        .p4{
+            display: block;
+            grid-area: p4;
+        }
+    }
+}

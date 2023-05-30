@@ -1,3 +1,40 @@
 /* =============
     Footer
 ============= */
+
+
+.footer-content{
+ 
+    .footer-stuff{
+        display: grid;
+        grid-template-areas: 
+        "t1 t2"
+        "t3 t4"
+        "t5 t6";
+        }
+
+        .t1{
+            grid-area: t1;
+        }
+
+        .t2{
+            grid-area: t2;
+        }
+
+        .t3{
+            grid-area: t3;
+        }
+        
+        .t4{
+            grid-area: t4;
+        }
+
+        .t5{
+            grid-area: t5;
+        }
+
+        .t6{
+            grid-area: t6;
+        }  
+        
+}

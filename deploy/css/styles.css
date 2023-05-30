@@ -322,6 +322,137 @@ template {
 /* =============
     Base
 ============= */
+.large-images {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .large-images {
+    height: 383px;
+    object-fit: cover;
+  }
+}
+
+.saw-picture {
+  width: 350px;
+  height: 125px;
+}
+@media (min-width: 992px) {
+  .saw-picture {
+    width: 875px;
+    height: 313px;
+  }
+}
+
+.video-images {
+  width: 107px;
+  height: 151px;
+}
+@media (min-width: 992px) {
+  .video-images {
+    width: 214px;
+    height: 306px;
+  }
+}
+
+.project-images {
+  width: 165px;
+  height: 110px;
+}
+@media (min-width: 992px) {
+  .project-images {
+    width: 535px;
+    height: 333px;
+  }
+}
+
+.outline-image {
+  width: 349px;
+  height: 144px;
+}
+@media (min-width: 992px) {
+  .outline-image {
+    width: 1197px;
+    height: 493px;
+  }
+}
+
+.about-us-image {
+  width: 350px;
+  height: 249px;
+}
+@media (min-width: 992px) {
+  .about-us-image {
+    width: 730px;
+    height: 520px;
+  }
+}
+
+.quality-check-image {
+  width: 228px;
+  height: 29px;
+}
+@media (min-width: 992px) {
+  .quality-check-image {
+    width: 495px;
+    height: 64px;
+  }
+}
+
+header .burger {
+  display: flex;
+}
+header .logo-image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .socials-image {
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+  }
+}
+@media (min-width: 992px) {
+  .socials-image {
+    width: 57px;
+    height: 57px;
+    object-fit: cover;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+}
+
+.content {
+  grid-area: content;
+}
+
+.bg-light-pink {
+  background-color: #FFB6B6;
+}
+
+.bg-dark-pink {
+  background-color: #FF8282;
+}
+
+.header-color {
+  background-color: #FFB6B6;
+}
+
+.white-text {
+  color: white;
+}
+
+.light-purple {
+  background-color: #E0E0F2;
+}
+
 /* =============
     Typography
 ============= */
@@ -333,6 +464,11 @@ body {
 header {
   font-family: "Crimson Pro", serif;
   font-size: 36px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
 }
 
 /* =============
@@ -364,4 +500,85 @@ textarea {
 ============= */
 /* =============
     Footer
+============= */
+.footer-content .footer-stuff {
+  display: grid;
+  grid-template-areas: "t1 t2" "t3 t4" "t5 t6";
+}
+.footer-content .t1 {
+  grid-area: t1;
+}
+.footer-content .t2 {
+  grid-area: t2;
+}
+.footer-content .t3 {
+  grid-area: t3;
+}
+.footer-content .t4 {
+  grid-area: t4;
+}
+.footer-content .t5 {
+  grid-area: t5;
+}
+.footer-content .t6 {
+  grid-area: t6;
+}
+
+/* =============
+    About Us
+============= */
+/* =============
+    Carcass Saws
+============= */
+/* =============
+    Dovetail Saws
+============= */
+/* =============
+    Education
+============= */
+/* =============
+    Projects
+============= */
+.projects .p3 {
+  display: none;
+}
+.projects .p4 {
+  display: none;
+}
+.projects .project-pictures {
+  display: grid;
+  grid-template-areas: "p1 p2";
+}
+.projects .p1 {
+  grid-area: p1;
+}
+.projects .p2 {
+  grid-area: p2;
+}
+@media (min-width: 992px) {
+  .projects .project-pictures {
+    display: grid;
+    grid-template-areas: "p1 p2" "p3 p4";
+  }
+  .projects .p1 {
+    grid-area: p1;
+  }
+  .projects .p2 {
+    grid-area: p2;
+  }
+  .projects .p3 {
+    display: block;
+    grid-area: p3;
+  }
+  .projects .p4 {
+    display: block;
+    grid-area: p4;
+  }
+}
+
+/* =============
+    Saws
+============= */
+/* =============
+    Tenon
 ============= */
