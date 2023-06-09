@@ -21,12 +21,27 @@
 <section class="container">
   <div class="content">
 
-    <header>
-      <img class="burger" src="img/burger.png" alt="burger menu">
+    <header> 
+      <div class="mobile-nav">
+        <img class="burger" src="img/burger.png" alt="burger menu">
+      </div>
       <img class="logo-image" src="img/logo.png" alt="logo">
+    </header>
+
+<!-- Desktop Nav -->
+<section class="navbar">
+  <button class="nav-button"> Dovetail Saws </button>
+  <button class="nav-button"> Carcass Saws </button>
+  <button class="nav-button"> Tenon Saws </button>
+  <button class="nav-button"> Education </button>
+  <button class="nav-button"> Projects </button>
+  <button class="nav-button"> About Us </button>
+</section>
+
+    <header>
       <img class="large-images" src="img/image.png" alt="hero">
     </header>
-    
+
     <p class="body">
       Our Saws are exceptionally accurate, beautiful, and perfectly set for the jobs for which they are designed. Saw blades are made from polished Swedish Steel and tempered to Rockwell 52 for durability and ease of sharpening. We take care to make sure our saw blades are properly sharpened and accurately set. We carefully hand shape and finish each handle for a comfortable, silky-smooth grip. Each Lie-Nielsen Saw is precision filed, set, and test cut in hardwood before it leaves our shop.
     </p>
@@ -36,9 +51,19 @@
 
 <!-- Saws -->
 
+<div class="sectiondivider">
+  <section> 
+    <img class="line1" src="img/Vector68.png" alt="left line">
+  </section>
+
     <header>
       <h1> SAWS </h1>
     </header>
+
+    <section> 
+      <img class="line2" src="img/Vector69.png" alt="left line">
+    </section>
+</div>
 
     <!-- Dovetail Saws-->
     <section class="container">
@@ -47,20 +72,23 @@
         <h2> Dovetail </h2>
         <img class="saw-picture" src="img/dovetail-saw.png" alt="dovetail saw">
         <img src="img/stars.png" alt="stars">
-        <p> Reviews </p>
-        <p> $175 </p>
-        <img src="img/details.png" alt="details icon">
-
+        <div class="reviews">
+          <p> Reviews </p>
+          <div class="price-details">
+            <p class="price"> $175 </p>
+            <img class="details-icon" src="img/details.png" alt="details icon">
+          </div>
+        </div>
 
         <p> Styles: </p>
         <button> --- </button>
-        <button> 
+        <button class="button1"> 
           <img src="img/heart.png" alt=heart> 
           Wishlist
         </button>
         <p> Quantity: </p>
         <button> 1 </button>
-        <button> 
+        <button class="button2"> 
           <img src="img/cart.png" alt=cart> 
           Add to Cart
         </button>
@@ -72,20 +100,22 @@
         <h2> Carcass </h2>
         <img class="saw-picture" src="img/carcass-saw.png" alt="carcass saw">
         <img src="img/stars.png" alt="stars">
-        <p> Reviews </p>
-        <p> $175 </p>
+        <div class="reviews">
+          <p> Reviews </p>
+          <p> $175 </p>
+        </div>
         <img src="img/details.png" alt="details icon">
 
 
         <p> Styles: </p>
         <button> --- </button>
-        <button> 
+        <button class="button1"> 
           <img src="img/heart.png" alt=heart> 
           Wishlist
         </button>
         <p> Quantity: </p>
         <button> 1 </button>
-        <button> 
+        <button class="button2"> 
           <img src="img/cart.png" alt=cart> 
           Add to Cart
         </button>
@@ -97,20 +127,22 @@
         <h2> Tenon </h2>
         <img class="saw-picture" src="img/tenon-saw.png" alt="tenon saw">
         <img src="img/stars.png" alt="stars">
-        <p> Reviews </p>
-        <p> $250 </p>
+        <div class="reviews">
+          <p> Reviews </p>
+          <p> $250 </p>
+        </div>
         <img src="img/details.png" alt="details icon">
 
 
         <p> Styles: </p>
         <button> --- </button>
-        <button> 
+        <button class="button1"> 
           <img src="img/heart.png" alt=heart> 
           Wishlist
         </button>
         <p> Quantity: </p>
         <button> 1 </button>
-        <button> 
+        <button class="button2"> 
           <img src="img/cart.png" alt=cart> 
           Add to Cart
         </button>
@@ -129,10 +161,10 @@
   <section class="container">
     <div class="content">
 
-    <button> Getting Started </button>
-    <button> Books </button>
-    <button> Video Lessons </button>
-    <button> Free Video Lessons </button>
+    <button class="button1"> Getting Started </button>
+    <button class="button1"> Books </button>
+    <button class="button1"> Video Lessons </button>
+    <button class="button1"> Free Video Lessons </button>
 
     <p> Instructor: </p>
     <button> Peter Follansbee </button>
@@ -143,11 +175,11 @@
       <h2> Carved Oak Boxes </h2>
       <h2> $40 </h2>
       <img src="img/details.png" alt="details icon">
-      <button> 
+      <button class="button2"> 
         <img src="img/cart.png" alt="cart">
         Add to Cart
       </button>
-      <button> 
+      <button class="button1"> 
         <img src="img/heart.png" alt="heart">
         Wishlist
       </button>
@@ -158,11 +190,11 @@
     <h2> Carving Wooden Spoons </h2>
     <h2> $40 </h2>
     <img src="img/details.png" alt="details icon">
-    <button> 
+    <button class="button2"> 
       <img src="img/cart.png" alt="cart">
       Add to Cart
     </button>
-    <button> 
+    <button class="button1"> 
       <img src="img/heart.png" alt="heart">
       Wishlist
     </button>
@@ -224,7 +256,7 @@
     <h2> SIGN UP </h2>
     <form action="#">
       <input type="text" placeholder="Email">
-      <button>
+      <button class="button2">
         Enter
       </button>
     </form>

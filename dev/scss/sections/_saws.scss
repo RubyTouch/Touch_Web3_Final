@@ -1,3 +1,24 @@
 /* =============
     Saws
 ============= */
+
+.reviews{
+     display: inline-block;
+     vertical-align: top;
+     margin-left: 5px;
+}
+
+.price-details{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+ //^its not working ugbneriabgrtqgutbitgra
+}
+
+.price{
+    margin-right: 10px;
+}
+
+.details-icon{
+    float: right;
+}

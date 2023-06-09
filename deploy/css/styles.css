@@ -463,7 +463,7 @@ body {
 
 header {
   font-family: "Crimson Pro", serif;
-  font-size: 36px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -474,6 +474,25 @@ h2 {
 /* =============
     Buttons
 ============= */
+.button1 {
+  background-color: #BA8B7C;
+  color: #fff;
+  padding: 11px 18px 11px 18px;
+}
+
+.button2 {
+  background-color: #BF6042;
+  color: #fff;
+  padding: 11px 18px 11px 18px;
+}
+
+.nav-button {
+  background-color: #BF6042;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+}
+
 /* =============
     Forms
 ============= */
@@ -498,6 +517,50 @@ textarea {
 /* =============
     Header
 ============= */
+@media (min-width: 992px) {
+  .mobile-nav .burger {
+    display: none;
+  }
+}
+
+.nav-buttons .nav-button {
+  display: none;
+}
+@media (min-width: 992px) {
+  .nav-buttons .nav-button {
+    display: block;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  background-color: #BF6042;
+  height: 100px;
+}
+
+.sectiondivider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+
+.line1 {
+  grid: flex;
+  justify-content: left;
+}
+
+.line2 {
+  align-self: right;
+}
+
 /* =============
     Footer
 ============= */
@@ -579,6 +642,26 @@ textarea {
 /* =============
     Saws
 ============= */
+.reviews {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+}
+
+.price-details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.price {
+  margin-right: 10px;
+}
+
+.details-icon {
+  float: right;
+}
+
 /* =============
     Tenon
 ============= */
