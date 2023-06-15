@@ -322,6 +322,13 @@ template {
 /* =============
     Base
 ============= */
+@media (min-width: 992px) {
+  .centerPage {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
 .large-images {
   width: 100%;
 }
@@ -433,24 +440,19 @@ header .logo-image {
   grid-area: content;
 }
 
-.bg-light-pink {
-  background-color: #FFB6B6;
+.overall-item-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "titleimg titleimg" "itemsoptions reviewinfo";
 }
-
-.bg-dark-pink {
-  background-color: #FF8282;
+.overall-item-grid .title-img {
+  grid-area: titleimg;
 }
-
-.header-color {
-  background-color: #FFB6B6;
+.overall-item-grid .review-info {
+  grid-area: reviewinfo;
 }
-
-.white-text {
-  color: white;
-}
-
-.light-purple {
-  background-color: #E0E0F2;
+.overall-item-grid .items-options {
+  grid-area: itemsoptions;
 }
 
 /* =============
