@@ -2,19 +2,68 @@
     Footer
 ============= */
 
+.footer-line{
+    width: 100%;
+    
+    @include lg{
+        width: 1440px;
+        height: 20px;
+    }
+}
+
+.footer{
+
+    &.container{
+
+        @include md{
+            display:grid;
+            grid-template-columns: 10% auto 10%;
+            grid-template-areas: 
+            ". content ."
+            ;
+        }
+    }
+}
+
+.icons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: baseline;
+        align-content: center;
+        padding: 0px 0px 40px 0px;
+}
+
+.numbers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: center;
+    color: $brown;
+    margin: 10px;
+}
+
+.footer-font{
+    font-size: 24px;
+}
 
 .footer-content{
  
     .footer-stuff{
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
-        "t1 t2"
-        "t3 t4"
-        "t5 t6";
+        "t1 t2 t7"
+        "t3 t4 t8"
+        "t5 t6 t9";
         }
 
         .t1{
             grid-area: t1;
+            padding: 0px 20% 0px 20%;
         }
 
         .t2{
@@ -23,6 +72,7 @@
 
         .t3{
             grid-area: t3;
+            padding: 0px 20% 0px 20%;
         }
         
         .t4{
@@ -31,10 +81,40 @@
 
         .t5{
             grid-area: t5;
+            padding: 0px 20% 0px 20%;
         }
 
         .t6{
             grid-area: t6;
         }  
-        
+
+        .t7{
+            grid-area: t7;
+        }
+
+        .t8{
+            grid-area: t8;
+        }
+
+        .t9{
+            grid-area: t9;
+            padding: 0px 40px 0px 0px;
+        } 
+}
+
+.t7{
+    color: $brown;
+}
+
+.t8{
+    align-self: center;
+}
+
+.t9{
+    font-size: 20px;
+    color: gray;
+}
+
+.bar{
+    height: 50px;
 }

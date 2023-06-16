@@ -2,54 +2,34 @@
     Projects
 ============= */
 
-.projects{
-    .p3{
-        display: none;
+
+.project-section {
+    p:first-child {
+        max-width: 860px;
+        margin: 60px auto 100px;
     }
-
-    .p4{
-        display: none;
+    a {
+        text-decoration: none;       
     }
- 
-    .project-pictures{
-            display: grid;
-            grid-template-areas: 
-            "p1 p2";
-        }
-
-        .p1{
-            grid-area: p1;
-        }
-
-        .p2{
-            grid-area: p2;
-        }
-
- 
-    @include lg{
-        .project-pictures{
-            display: grid;
-            grid-template-areas:
-            "p1 p2"
-            "p3 p4";
-        }
-        
-        .p1{
-            grid-area: p1;
-        }
-
-        .p2{
-            grid-area: p2;
-        }
-
-        .p3{
-            display: block;
-            grid-area: p3;
-        }
-
-        .p4{
-            display: block;
-            grid-area: p4;
-        }
+    figure {
+        padding-bottom: 25px;
     }
+    .view-img {
+        margin-top: 70px;
+        padding-bottom: 0;
+    }
+}
+
+.p-text{
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 130px;
+}
+
+.link{
+    color: $brown;
+}
+
+.slide{
+    padding: 5% 40% 5% 40%;
 }

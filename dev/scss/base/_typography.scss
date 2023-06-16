@@ -15,5 +15,9 @@ header{
 
 h2{
     text-align: center;
-}
+    margin: 30px;
 
+    @include lg{
+        font-size: 36px;
+    }
+}

@@ -3,22 +3,80 @@
 ============= */
 
  
- .button1{
-    background-color: $light-brown;
-    color: #fff;
-    padding: 11px 18px 11px 18px;
- }
- 
- 
- .button2{
-    background-color: $brown;
-    color:#fff;
-    padding: 11px 18px 11px 18px;
+.button1{
+   background-color: $light-brown;
+   color: #fff;
+   padding: 11px 18px 11px 18px;
+}
+
+
+.button2{
+   background-color: $brown;
+   color:#fff;
+   padding: 11px 18px 11px 18px;
+}
+
+.nav-button{
+   display: none;
+
+   @include lg{
+      display: block;
+      background-color: #BF6042;
+      color: #fff;
+      border: none;
+      font-family: "Crimson Pro";
+      font-size: 36px;
+   }
+}
+
+.quan-button{
+   padding: 2px 23px 2px 23px;
+}
+
+.type-button{
+   padding: 2px 18px 2px 18px;
+}
+
+.edu-button{
+   font-size: 36px;
+   width: 260px;
+   padding: 20px 30px 20px 30px;
+   margin: 0px 10px 0px 10px;
  }
 
- .nav-button{
-    background-color: #BF6042;
-    color: #fff;
-    border: none;
-    font-size: 24px;
- }
+.book{
+   font-size: 36px;
+   width: 260px;
+   padding: 20px 30px 60px 30px;
+   margin: 0px 10px 0px 10px;
+}
+
+.top-button{
+      background-color: transparent;
+      border: none;
+      font-family: "Montserrat";
+      font-size: 36px;
+}
+
+.top-img{
+   width: 26px;
+   height: 26px;
+}
+
+.acc-buttons{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: baseline;
+      align-content: center;
+      padding: 30px 30px 30px 30px;
+   
+}
+
+.thank-button{
+   background-color: $brown;
+   padding: 20px;
+   color: #fff;
+   font-size: 36px;
+}

@@ -2,23 +2,43 @@
     Saws
 ============= */
 
-.reviews{
-     display: inline-block;
-     vertical-align: top;
-     margin-left: 5px;
-}
 
-.price-details{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
- //^its not working ugbneriabgrtqgutbitgra
-}
+.saws-section {
+    padding: 30px 0;
 
-.price{
-    margin-right: 10px;
-}
-
-.details-icon{
-    float: right;
+    .part-title {
+        padding: 90px 0 70px;
+    }
+    .review-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .review-info {
+        display: flex;
+        align-items: center;
+        span {
+            padding-left: 15px;
+        }
+    }
+    .price-text {
+        padding-bottom: 50px;
+    }
+    .product-image {
+        padding-bottom: 80px;
+        
+    }
+    .divider {
+        flex: 0;
+        display: block;
+        height: 314px;
+        background-color: $brown;
+        padding: 0 3px;
+        margin: 0 30px;
+        border-radius: 10px;
+    }
+    @include md-max {
+        .divider {
+            display: none;
+        }
+    }
 }
